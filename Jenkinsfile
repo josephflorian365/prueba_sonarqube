@@ -36,7 +36,6 @@ pipeline {
                 sh './mvnw sonar:sonar'
             }
         }
-        }
                 }
                }
         
