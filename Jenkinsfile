@@ -31,7 +31,7 @@ pipeline {
             }
             stage('SonarQube Analysis1') {
                 agent any 
-                withSonarQubeEnv('cessda-sonar') {
+                withSonarQubeEnv('SonarQubePruebas') {
             withMaven {
                 sh './mvnw sonar:sonar'
             }
