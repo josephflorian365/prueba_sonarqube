@@ -37,8 +37,7 @@ pipeline {
             }
         }
                 }
-               }
-        
+     
             stage('SonarQube Analysis') {
                 agent any 
                 steps {
