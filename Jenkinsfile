@@ -35,7 +35,7 @@ pipeline {
                     withSonarQubeEnv('SonarQubePruebas') {
                          // Tenga en cuenta que los parámetros en withSonarQubeEnv () deben ser los mismos que la configuración de Nombre en los servidores SonarQube antes
             withMaven(maven: 'mavenTool') {
-                                 sh "mvn clean package sonar:sonar -Dmaven.test.skip=sonar true:sonar -Dsonar.projectKey=ms-certidigital-title-test -Dsonar.projectName=ms-certidigital-title-test -Dsonar.projectVersion=0.1 -Dsonar.sourceEncoding=UTF-8 -Dsonar.exclusions=src/test/** -Dsonar.sources=src/ -Dsonar.java.binaries=target/classes -Dsonar.host.url=http://localhost:9000 -Dsonar.login=a426fdc6c4a00b5bbfbdda01350e548776e42ad2"
+                                 sh "mvn clean package sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=a426fdc6c4a00b5bbfbdda01350e548776e42ad2"
             }
         }
                 }
