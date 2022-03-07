@@ -26,7 +26,7 @@ pipeline {
             stage('Build Project') {
                 agent any 
                 steps {
-                        sh 'mvn clean install'
+                        sh '.\mvnw clean install'
                 }
             }
             stage('SonarQube Analysis1') {
