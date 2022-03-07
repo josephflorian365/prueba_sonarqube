@@ -16,7 +16,7 @@ pipeline {
                               extensions: [[$class: 'CleanCheckout']], 
                               submoduleCfg: [], 
                               userRemoteConfigs: [
-                                    [url: 'https://github.com/josephflorian365/ms-certidigital-title-backend.git', credentialsId: 'jenkins_github']
+                                    [url: 'https://github.com/josephflorian365/prueba_sonarqube.git', credentialsId: 'jenkins_github']
                                     ]]) 
                            sh 'pwd'
                            sh'ls -l' 
