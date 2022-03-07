@@ -31,12 +31,14 @@ pipeline {
             }
             stage('SonarQube Analysis1') {
                 agent any 
+                steps {
                 withSonarQubeEnv('SonarQubePruebas') {
             withMaven {
                 sh './mvnw sonar:sonar'
-            }
-        }
+                        }
+                    }
                 }
+            }
      
             stage('SonarQube Analysis') {
                 agent any 
